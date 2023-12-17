@@ -356,22 +356,39 @@ footer {
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   background-clip: text;
-  background-position: -2.8rem 0;
+  background-position: 0 0;
   background-image: linear-gradient(#161616, #161616);
   line-height: 1;
   white-space: nowrap;
 }
 
+.job-title::after {
+  content: '';
+  width: 4px;
+  height: 29px;
+  margin-left: 3px;
+  background-color: #161616;
+  position: absolute;
+  animation: blinking 1s 3s infinite;
+}
+
+@keyframes blinking {
+  0% {background-color: #161616}
+  50% {background-color: transparent}
+  100% {background-color: #161616}
+}
+
+
 .btn-black {
   opacity: 0;
   animation: slideFromLeft 2.5s ease forwards;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
 }
 
 .btn-border {
   opacity: 0;
   animation: slideFromLeft 2.5s ease forwards;
-  animation-delay: 1.2s;
+  animation-delay: 1s;
   background-color: #2e4edb;
   margin-right: 10px;
 }
@@ -441,8 +458,8 @@ section {
 }
 
 .aboutImg img {
-  width: 90%;
-  height: 90%;
+  width: 98%;
+  height: 98%;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid transparent;
@@ -458,8 +475,8 @@ section {
   border-radius: 50%;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
-  border-left: 1px solid #2e4edb;
-  border-right: 1px solid #2e4edb;
+  border-left: 2px solid #2e4edb;
+  border-right: 2px solid #161616;
   animation: aboutSpinner 8s linear infinite;
 }
 
@@ -502,12 +519,11 @@ section {
   position: relative;
   padding-top: 220px;
   opacity: 1;
-  /* animation: none; */
 }
 
 .section-services:before {
   content: "";
-  background: url(../img/expertise.jpg) no-repeat
+  background: url(../img/expertise.webp) no-repeat
     fixed center / cover;
   width: 100%;
   height: 400px;
@@ -521,7 +537,7 @@ section {
   width: 100%;
   height: 400px;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(33, 33, 33, 0.9);
   top: 0;
   left: 0;
   z-index: 0;
@@ -733,7 +749,7 @@ section {
 
 /* Section: Counters */
 .section-counters {
-  background: url(../img/CTA.jpg) no-repeat
+  background: url(../img/CTA.webp) no-repeat
     fixed center / cover;
   width: 100%;
   padding: 100px 0;
@@ -749,7 +765,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(33, 33, 33, 0.9);
 }
 
 

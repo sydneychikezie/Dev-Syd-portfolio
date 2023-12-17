@@ -31,6 +31,11 @@
     font-size: 20px;
   }
 
+  .job-title::after {
+    content: '';
+    height: 20px;
+  }
+
   .hero img {
     height: 420px;
   }
@@ -291,6 +296,11 @@
   .job-title {
     font-size: 18px;
     margin-bottom: 22px;
+  }
+
+  .job-title::after {
+    content: '';
+    height: 18px;
   }
 
   .hero img {
