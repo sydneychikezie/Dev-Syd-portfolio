@@ -385,7 +385,7 @@ footer {
   animation-delay: 1.5s;
 }
 
-.btn-border {
+.btn-blue {
   opacity: 0;
   animation: slideFromLeft 2.5s ease forwards;
   animation-delay: 1s;
@@ -409,7 +409,7 @@ footer {
 /* SITEMAIN */
 .site-main {
   position: relative;
-  background-color: #e1e1e1;
+  background: #e1e1e1;
   z-index: 1;
 }
 /* site-section */
@@ -537,7 +537,7 @@ section {
   width: 100%;
   height: 400px;
   position: absolute;
-  background-color: rgba(33, 33, 33, 0.9);
+  background-color: rgba(33, 33, 33, 0.8);
   top: 0;
   left: 0;
   z-index: 0;
@@ -596,7 +596,7 @@ section {
 }
 
 .portfolio-item:hover:before {
-  background-color: rgba(33, 33, 33, 0.9);
+  background-color: rgba(33, 33, 33, 0.8);
 }
 
 .portfolio-item-info {
@@ -765,7 +765,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(33, 33, 33, 0.9);
+  background-color: rgba(33, 33, 33, 0.8);
 }
 
 
@@ -832,6 +832,10 @@ section {
 
 .section-form .btn {
   margin-top: 40px;
+}
+
+.section-form .btn:hover {
+  animation: buttonRotation 2s 1s linear;
 }
 
 .section-form .submit-msg {
@@ -936,15 +940,6 @@ section {
   }
 }
 
-  /* 0% {
-    opacity: 0;
-    filter: blur(10px);
-  }
-  100% {
-    opacity: 1;
-    filter: blur(0);
-  } */
-
 @keyframes slideFromRight {
   0% {
     transform: translateX(40rem) rotateX(-20deg);
@@ -1022,4 +1017,28 @@ section {
   100% {
     transform: translateY(0);
   }
+}
+
+@keyframes buttonRotation {
+  0% {transform: scale(1) rotateZ(0)}
+  5% {transform: scale(1.2) rotateZ(5deg)}
+  10% {transform: scale(1.2) rotateZ(-5deg)}
+  15% {transform: scale(1.2) rotateZ(5deg)}
+  20% {transform: scale(1.2) rotateZ(-5deg)}
+  25% {transform: scale(1.2) rotateZ(5deg)}
+  30% {transform: scale(1.2) rotateZ(-5deg)}
+  35% {transform: scale(1.2) rotateZ(5deg)}
+  40% {transform: scale(1.2) rotateZ(-5deg)}
+  45% {transform: scale(1.2) rotateZ(5deg)}
+  50% {transform: scale(1.2) rotateZ(-5deg)}
+  55% {transform: scale(1.2) rotateZ(5deg)}
+  60% {transform: scale(1.2) rotateZ(-5deg)}
+  65% {transform: scale(1.2) rotateZ(5deg)}
+  70% {transform: scale(1.2) rotateZ(-5deg)}
+  75% {transform: scale(1.2) rotateZ(5deg)}
+  80% {transform: scale(1.2) rotateZ(-5deg)}
+  85% {transform: scale(1.2) rotateZ(5deg)}
+  90% {transform: scale(1.2) rotateZ(-5deg)}
+  95% {transform: scale(1.2) rotateZ(5deg)}
+  100% {transform: scale(1) rotateZ(0)}
 }
